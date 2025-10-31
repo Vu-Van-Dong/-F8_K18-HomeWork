@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lap</title>
+	</head>
+	<body>
+		<h1>Trong phong thi nghiem</h1>
+		
+		<form method="Get"  action="lab.html">
+			<label for="timkiem">Tim kiem</label>
+			<input  type="text" name="q" placeholder="tim kiem"  id="timkiem"><br>
+			<span>Trinh do:</span> <br>
+			<label for="trinhdo1">Cao</label>
+			<input type="checkbox" name="level[]" id="trinhdo1" >
+			<label for="trinhdo">thap</label>
+			<input type="checkbox" name="level[]" id="trinhdo">
+			<label for="trinhdo2">Cao</label>
+			<input type="checkbox" name="level[]" id="trinhdo2">
+			<label for="yeu">Yeu</label>
+			<input type="checkbox" name="level[]" id="yeu"><br>
+			
+			<span>hinh thuc</span> <br>
+			<label for="mode1" >Oneline</label>
+			<input type="radio" name="mode[]" id="mode1">
+			<label for="mode2">ofline</label>
+			<input type="radio" name="mode[]" id="mode2">
+			<label for="khong">Khong hoc</label>
+			<input type="radio" name="mode[]" id="khong"><br>
+			
+			
+			<span>Chon vi tri:</span>
+			<select>
+				<option> frontend</option>
+				<option> Backend</option>
+				<option >Devops</option>
+			</select>
+			<br>
+			<input type="submit" value="Submit">
+			<input type="reset">
+		</form>
+		
+	</body>
+</html>

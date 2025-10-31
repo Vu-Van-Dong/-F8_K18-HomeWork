@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Submit</title>
+	</head>
+	<body>
+		<h1>Day la trang submit</h1>
+		<form  method="post" action="https://api-gateway.fullstack.edu.vn/action_page.php">
+		
+			<span>Phiếu thăm dò thông tin </span>
+			<br><label for="name">Ho ten:</label>
+			<input type="text" placeholder="Nhap ten:" name="name" id="name" > <br>
+			<label for="password"> Mat khau:</label>
+			<input type="password" placeholder="Nhap khau:" name="password" id="password" > <br>
+			<label for="email"> Email:</label>
+			<input type="email" placeholder="Nhap email:" name="email" id="email" > <br>
+			<label for="number" >Tuoi</label>
+			<input type="number" placeholder="Nhap tuoi:" name="number" id="number" > <br>
+			<label for="category">Chon vi tri:</label>
+			<select id="category" name="category">
+				<option>Nhap mon</option>
+				<option value="Toan">Toan</option>
+				<option value="Van">Van</option>
+			</select>
+			
+			
+			<input type="submit" value="Gửi ">
+			
+		
+		</form>
+	</body>
+</html>
