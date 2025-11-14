@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>bai1-buoi10</title>
+	</head>
+	
+	<style>
+		.vuong{
+			width: 400px;
+			height: 400px;
+			background-color: white;
+			border: 15px #7f1d1d solid;
+			
+		}
+		.nhat{
+			width: 500px;
+			height: 300px;
+			background-color: white;
+			border: 15px #1d4ed8 solid;
+			margin:20px;
+			
+		}
+		.tamgiaclen{
+			width: 0px;
+			height: 0px;
+			border-left: 300px solid transparent;
+			border-right: 300px solid transparent;
+			border-bottom:500px solid #15803d;
+		}
+		.tamgiaxuong{
+			width: 0px;
+			height: 0px;
+			border-top: 500px solid #8b5e00;
+			border-right: 300px solid transparent;
+			border-left: 300px solid transparent;
+			margin:20px;
+		}
+		.giactrai{
+			width: 0px;
+			height: 0px;
+			border-right: 500px solid  #e6c2ff;
+			border-bottom:300px solid transparent;
+			border-top: 400px solid transparent;
+		}
+		.giacphai{
+			width: 0px;
+			height: 0px;
+			border-left: 500px solid  #92400e;
+			border-bottom:300px solid transparent;
+			border-top: 400px solid transparent;
+			margin: 50px ;
+			
+		}
+		.thang{
+			width: 500px;
+			height: 0px;
+			border-right: 100px solid transparent;
+			border-left: 100px solid transparent;
+			border-bottom:300px solid #15803d;
+			margin: 50px ;
+		}
+		.giacrong{
+			width: 0px;
+			height: 0px;
+			border-left: 300px solid  transparent;
+			border-right: 300px solid transparent;
+			border-bottom:500px solid #111827;
+			margin: 50px ;
+			
+		}
+		.nhon{
+			width: 0px;
+			height: 0px;
+			border-left: 100px solid  transparent;
+			border-right: 100px solid transparent;
+			border-bottom:300px solid #92400e;
+			margin: 50px ;
+		}
+		
+		.hinhthoi{
+			width: 0px;
+			height: 0px;
+			border-left: 300px solid  transparent;
+			border-right: 300px solid transparent;
+			border-bottom:300px solid #8b5e00;
+			margin: 50px ;
+		}
+		.tenphai{
+			width: 0px;
+			height: 0px;
+			border-top: 200px solid  transparent;
+			border-left: 400px solid aqua;
+			border-bottom:200px solid transparent;
+			margin: 50px ;
+		}
+		.tentrai{
+			width: 0px;
+			height: 0px;
+			border-top: 200px solid  transparent;
+			border-right: 400px solid #e6c2ff;
+			border-bottom:200px solid transparent;
+			margin: 50px ;
+		}
+		
+	
+		.ribbon {
+			width: 400px;
+			height: 200px;
+			background: #cf5b44;       /* màu lá cờ */
+			position: relative;
+			margin: 50px;
+		}
+		/* Tam giác trên (bên ngoài HCN) */
+		.ribbon::before {
+			content: "";
+			position: absolute;
+			right: -99px;    /* tam giác nằm ngoài cạnh phải */
+			top: 0;
+			
+			width: 0;
+			height: 0;
+			
+			border-top: 100px solid #cf5b44;
+			border-right: 100px solid transparent;
+		}
+		
+		/* Tam giác dưới (bên ngoài HCN) */
+		.ribbon::after {
+			content: "";
+			position: absolute;
+			right: -99px;    /* tam giác nằm ngoài cạnh phải */
+			bottom: 0;
+			
+			width: 0;
+			height: 0;
+			border-left: 100px solid #cf5b44;
+			border-top: 100px solid transparent;
+			
+		}
+		.F{
+			
+			width: 400px;
+			height: 250px;
+			background-color: transparent;
+			border: 50px solid  #92400e;
+			border-right: 0px solid  transparent;
+		}
+		.f1{
+			
+			width: 400px;
+			height: 250px;
+			background-color: transparent;
+			border: 50px solid  #92400e;
+			border-right: 0px solid  transparent;
+			border-bottom: 0px solid transparent;
+			border-top: 0 solid #92400e;
+			margin-top: -5px;
+			
+		}
+		.f8{
+			
+			width: 400px;
+			height: 250px;
+			background-color: transparent;
+			border: 50px solid  #92400e;
+			margin-top: 50px;
+		
+		}
+		.ff8{
+			
+			width: 400px;
+			height: 250px;
+			background-color: transparent;
+			border: 50px solid  #92400e;
+			border-top: transparent;
+			margin-top: -5px;
+			
+			
+		}
+		
+	
+	
+	</style>
+	<body>
+		
+		<div class="vuong"></div>
+		<div class="nhat"></div>
+		<div class="tamgiaclen"></div>
+		<div class="tamgiaxuong"></div>
+		<div class="giactrai"></div>
+		<div class="giacphai"></div>
+		<div class="thang"></div>
+		<div class="giacrong"></div>
+		<div class="nhon"></div>
+		<div class="hinhthoi"></div>
+		<div class="tenphai"></div>
+		<div class="tentrai"></div>
+		<div class="ribbon"></div>
+		<div class="ff">
+			<div class="F"></div>
+			<div class="f1"></div>
+		</div>
+		<div class="F8">
+			<div class="f8"></div>
+			<div class="ff8"></div>
+		</div>
+		
+	</body>
+</html>
