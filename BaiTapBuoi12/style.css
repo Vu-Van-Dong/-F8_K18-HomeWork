@@ -47,7 +47,8 @@ html{
     font-size: 1.125rem;
     font-weight: 600;
 }
-.button_2 {
+button {
+    position: relative;
     color: white;
     text-decoration: none;
     padding: 1rem 2rem;
@@ -55,6 +56,8 @@ html{
     background-color: #f05123;
     font-size: 1.125rem;
     font-weight: 600;
+    margin-left: 1rem;
+    border: #ca8d0c solid 0.2rem;
 }
 
 .button:hover{
@@ -118,7 +121,7 @@ input[type="checkbox"]{
 .box_4{
     text-align: center;
     margin: 2rem 0;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 span img {
     vertical-align: middle;
@@ -148,7 +151,7 @@ footer {
     padding: 2rem;
     border: 0.1rem solid #070707;
     z-index: 20;
-    /*display: none; !* mặc định ẩn *!*/
+    display: none; /* mặc định ẩn */
     box-sizing: border-box;
     text-align: center;
 }
@@ -215,6 +218,3 @@ footer {
     text-decoration: none;
 }
 
-.button_2:checked ~ .model{
-    display: block;
-}
