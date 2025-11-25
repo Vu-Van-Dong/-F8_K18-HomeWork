@@ -458,22 +458,6 @@ footer {
     padding: 0.7rem;
 }
 
-/*.list-item {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 1rem;*/
-/*    cursor: pointer;*/
-/*    transition: background 0.3s;*/
-/*}*/
-
-
-/*.list-item label {*/
-/*    cursor: pointer;*/
-/*    font-size: 1rem;*/
-/*    font-weight: 600;*/
-/*}*/
-
 .open-item-list,
 .close-item-list {
     font-size: 1.5rem;
@@ -510,10 +494,7 @@ footer {
     display: block;
     background-color: rgba(144, 114, 147, 0.37);
     padding: 1rem;
-    border: 0;
     position: relative;
-    top: 0;
-    right: 0;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 #faq-1:checked ~ .close-item-list{
@@ -536,10 +517,7 @@ footer {
     display: block;
     background-color: rgba(144, 114, 147, 0.37);
     padding: 1rem;
-    border: 0;
     position: relative;
-    top: 0;
-    right: 0;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 #faq-3:checked ~ .list-item-text{
@@ -555,13 +533,9 @@ footer {
     display: block;
     background-color: rgba(144, 114, 147, 0.37);
     padding: 1rem;
-    border: 0;
     position: relative;
-    top: 0;
-    right: 0;
     border-radius: 0.5rem 0.5rem 0 0;
 }
-
 
 
 
