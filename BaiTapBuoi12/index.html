@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 	<head>
@@ -12,6 +11,8 @@
 		<input type="checkbox" id="consult">
 		
 		<label for="start" class="overlay"></label>
+		<label for="consult" class="overlay_consult"></label>
+		
 		
 		<div id="model" class="model">
 			<div class="model_heading">
@@ -41,21 +42,40 @@
 				<label for="consult" class="model_consult_cancel">&times;</label>
 			</div>
 			<div class="model_consult_center">
-				<div class="model_consult_wrapper"  >
-					<span class="tooltip"> Nhập họ và tên đầy đủ của bạn</span>
-					<label for="consult_input_name" > 	<b>Họ và tên <span class="star">*</span></b></label>
-					<input type="text" placeholder="Nguyen Van A"  id="consult_input_name" >
+				<div class="model_consult_wrapper">
 					
+					<label for="consult_input_name"> <b>Họ và tên <span class="star">*</span></b></label>
+					<input type="text" placeholder="Nguyen Van A" id="consult_input_name">
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Nhập họ và tên đầy đủ của bạn
+						</div>
+						<div class="triangle"></div>
+					
+					</div>
 				</div>
 				<div class="model_consult_wrapper">
-					<span class="tooltip"> Số điện thoại để chúng tôi liên lạc</span>
-					<label for="consult_input_phone"> 	<b>Số điện thoại <span class="star">*</span> </b></label>
-					<input type="text" placeholder="0123456789"  id="consult_input_phone" >
+					
+					<label for="consult_input_phone"> <b>Số điện thoại <span class="star">*</span> </b></label>
+					<input type="tel" placeholder="0123456789" id="consult_input_phone">
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Số điện thoại để chúng tôi liên lạc
+						</div>
+						<div class="triangle"></div>
+					
+					</div>
 				</div>
 				<div class="model_consult_wrapper">
-					<span class="tooltip"> Email nhận thông tin hóa học(Không bắt buộc)</span>
-					<label for="consult_input_email"> 	<b>Email</b></label>
-					<input type="email" placeholder="example@gmail"  id="consult_input_email" >
+					<span class="tooltip"> </span>
+					<label for="consult_input_email"> <b>Email</b></label>
+					<input type="email" placeholder="example@gmail" id="consult_input_email">
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Email nhận thông tin khóa học(Không bắt buộc)
+						</div>
+						<div class="triangle"></div>
+					</div>
 				</div>
 			</div>
 			
@@ -63,41 +83,70 @@
 				<span><b>Khóa học quan tâm <span class="star">*</span></b></span>
 				<div class="model_consult_control_checkbox">
 					
-					<input type="checkbox" id="consult_input_html" >
-					<label for="consult_input_html" > HTML & CSS</label>
+					<input type="checkbox" id="consult_input_html">
+					<label for="consult_input_html"> HTML & CSS</label>
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Nhập họ và tên đầy đủ của bạn
+						</div>
+						<div class="triangle"></div>
+					</div>
 				
 				</div>
 				<div class="model_consult_control_checkbox">
 					<input type="checkbox" id="consult_input_javascript">
 					<label for="consult_input_javascript"> JavaScript</label>
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Ngôn ngữ lập trình cho web động
+						</div>
+						<div class="triangle"></div>
+					</div>
 				
 				</div>
 				<div class="model_consult_control_checkbox">
 					
 					<input type="checkbox" id="consult_input_font_end">
 					<label for="consult_input_font_end"> Font-end lo trinh</label>
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Lộ trình hoàn chỉnh trở thành Front-end Developer
+						</div>
+						<div class="triangle"></div>
+					</div>
 				
 				</div>
 				<div class="model_consult_control_checkbox">
 					
 					<input type="checkbox" id="consult_input_ReactJS">
 					<label for="consult_input_ReactJS"> ReactJS</label>
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Thư viện JavaScript phổ biến nhất hiện nay
+						</div>
+						<div class="triangle"></div>
+					</div>
 				
 				</div>
 				<div class="model_consult_control_checkbox">
 					
 					<input type="checkbox" id="consult_input_suppost">
-					<label for="consult_input_suppost" > Chưa rõ-Cần tư vấn </label>
+					<label for="consult_input_suppost"> Chưa rõ-Cần tư vấn </label>
+					<div class="info-wrapper">
+						<div class="info-wrapper-msg">
+							Chúng tôi sẽ tư vấn lộ trình phù hợp với bạn
+						</div>
+						<div class="triangle"></div>
+					</div>
 				</div>
-				
+			
 			</div>
 			<div class="model_consult_final">
-				<button class="model_consult_buton">Bắt đầu ngay</button>
-				
+				<button type="button" class="model_consult_buton">Bắt đầu ngay</button>
+			
 			</div>
 		
 		</div>
-		
 		
 		
 		<!-- ================== CONTENT ===================== -->
@@ -132,8 +181,10 @@
 						<div class="box_3">
 							<span class="box_3_text1"><b>Lời khuyên khi học lập trình tại F8</b></span>
 							<p class="box_3_text2">
-								Hãy bắt đầu với các khóa nền tảng như HTML, CSS và JavaScript trên F8, xem video kết hợp làm bài tập
-								và dự án nhỏ. Mỗi ngày chỉ cần dành một ít thời gian để code, đặt câu hỏi trong cộng đồng và kiên trì
+								Hãy bắt đầu với các khóa nền tảng như HTML, CSS và JavaScript trên F8, xem video kết hợp
+								làm bài tập
+								và dự án nhỏ. Mỗi ngày chỉ cần dành một ít thời gian để code, đặt câu hỏi trong cộng
+								đồng và kiên trì
 								hoàn thành trọn lộ trình. Bạn sẽ thấy mình tiến bộ nhanh hơn rất nhiều.
 							</p>
 						</div>
@@ -159,11 +210,68 @@
 				</div>
 			
 			</div>
+			
+			
+			<div class="container-2">
+				<h2>Câu hỏi thường gặp</h2>
+				<div class="container-2-list">
+					
+					<div class="container-2-list-item">
+						<input type="checkbox" id="faq-1" class="toggle-faq" hidden="">
+						<label for="faq-1"><b>Tôi có thể ứng dụng ngay sau khi học không?</b></label>
+						<label for="faq-1" class="open-item-list">+</label>
+						<label for="faq-1" class="close-item-list">-</label>
+						
+						<div class="list-item-text">
+							<p>Chắc chắn rồi! F8 luôn hướng tới các bạn học đi đôi với hành. Vì thế, sau mỗi bài học
+								video hoặc văn bản, bạn sẽ được làm rất nhiều bài tập để có động lại kiến thức, nắm vững
+								cú pháp, thậm chí là làm một thử thách code mới. Quan trọng hơn hết, bạn phải làm xong
+								các dự án thực chiến - được thiết kế bằng Figma thì mới hoàn thành khóa học nhé.</p>
+						</div>
+					</div>
+					
+					<div class="container-2-list-item">
+						<input type="checkbox" id="faq-2" class="toggle-faq" hidden="">
+						
+						<label for="faq-2"><b>Tôi có được hỗ trợ trong quá trình học không?</b></label>
+						<label for="faq-2" class="open-item-list">+</label>
+						<label for="faq-2" class="close-item-list">-</label>
+						
+						<div class="list-item-text">
+							<p>Tất nhiên rồi! Mặc dù bài tập đã có hướng dẫn, video chứa bài tương ứng và được giải
+								thích chi tiết nhất có thể nhưng nếu bạn gặp khó, bạn không cần lo lắng biết hỏi ai hay
+								không có người hướng dẫn. Tại mỗi bài học ở F8, bạn luôn có thể đặt câu hỏi, trao đổi và
+								tương tác với các bạn cùng học. Ngoài ra, chuyên viên hỗ trợ F8 sẽ luôn tận tình hướng
+								dẫn nếu bạn gặp khó khăn nhé.</p>
+						</div>
+					</div>
+					<div class="container-2-list-item">
+						<input type="checkbox" id="faq-3" class="toggle-faq" hidden="">
+						
+						<label for="faq-3"><b>Tôi muốn hỏi thì đăng câu hỏi ở đâu?</b></label>
+						<label for="faq-3" class="open-item-list">+</label>
+						<label for="faq-3" class="close-item-list">-</label>
+						
+						<div class="list-item-text">
+							<p>Tất nhiên rồi! Mặc dù bài tập đã có hướng dẫn, video chứa bài tương ứng và được giải
+								thích chi tiết nhất có thể nhưng nếu bạn gặp khó, bạn không cần lo lắng biết hỏi ai hay
+								không có người hướng dẫn. Tại mỗi bài học ở F8, bạn luôn có thể đặt câu hỏi, trao đổi và
+								tương tác với các bạn cùng học. Ngoài ra, chuyên viên hỗ trợ F8 sẽ luôn tận tình hướng
+								dẫn nếu bạn gặp khó khăn nhé.</p>
+						</div>
+					</div>
+					
+					
+				
+				</div>
+			</div>
 		</div>
+		
 		
 		<footer id="footer">
 			&copy;2025 Học Lập Trình Tại F8
 		</footer>
+	
 	
 	</body>
 </html>
