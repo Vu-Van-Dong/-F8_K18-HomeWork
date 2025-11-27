@@ -475,6 +475,7 @@ footer {
     background-color: #f3ecf4;
     padding: 16px;
     border-radius: 0 0 8px 8px;
+    text-align: left;
 }
 
 .expand-panel input[type=checkbox]:checked ~ .expand-content {
