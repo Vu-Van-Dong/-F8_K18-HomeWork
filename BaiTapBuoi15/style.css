@@ -685,14 +685,8 @@ footer {
 
  /*Khi hover vào li (cha hoặc con), giữ màu hover xuyên suốt */
 .menu li:hover > a {
-    background-color: rgba(154, 152, 152, 0.44);
     color: #7d3c93;
 }
 
-/* Khi hover vào con, cha vẫn giữ màu */
-.menu li:hover li:hover > a {
-    background-color: rgba(154, 152, 152, 0.44);
-    color: #7d3c93;
-}
 
 
