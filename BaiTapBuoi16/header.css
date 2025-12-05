@@ -3,6 +3,22 @@ header {
     margin: 20px 30px;
 
 }
+
+.header-bottom-control a{
+    text-decoration: none;
+    color: #262626;
+    font-size:18px ;
+    font-weight: 400;
+    padding: 14px 24px 14px 24px;
+
+}
+#header-top span a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size:18px ;
+    font-weight: 400;
+
+}
 #header-top{
     background-color: #FF9500;
     height: 55px;
