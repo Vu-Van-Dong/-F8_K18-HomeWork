@@ -1,0 +1,215 @@
+.container, .banner{
+    max-width: 1600px;
+    margin: auto;
+}
+*{
+    font-family: Be Vietnam Pro, sans-serif;
+}
+.benefits{
+    display: flex;
+    gap: 20px;
+    margin-bottom:20px ;
+}
+.benefits-description{
+    color: #4C4C4D;
+
+}
+#header--action{
+    height: 55px;
+    width: 214px;
+}
+.login{
+    width: 117px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #FF9500;
+    padding: 14px 34px 14px 34px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.up{
+    color: black;
+    border: none;
+    width: 67px;
+    height: 27px;
+    position: relative;
+    right: 30px;
+    top: 7px;
+
+
+
+}
+
+.header--action-button{
+    font-size: 18px;
+}
+.benefits-number{
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+
+
+
+}
+.benefits-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px 14px 0 0;
+
+}
+
+.benefits-description{
+    font-size: 18px;
+
+}
+.benefits-item{
+    flex-shrink: 1;
+    padding: 50px;
+    background-color: #FFFFFF;
+    width: 519px;
+    height: 437px;
+    position: relative;
+    border-radius: 12px;
+
+
+}
+.benefits-title{
+    margin-bottom: 14px;
+}
+.benefits-number{
+    display: flex;
+    justify-content: right;
+    font-size: 80px;
+    font-weight: bold;
+    max-height:59px;
+    max-width: 419px;
+    margin-left: 50px;
+}
+.benefits-icon button{
+    position: absolute;
+    height: 74px;
+    width: 74px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    right: 50px;
+    bottom: 50px;
+    background-color: #FCFCFD;
+    cursor: pointer;
+
+}
+/*banner */
+.banner{
+    max-height: 337px;
+    max-width: 965px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    position: relative;
+}
+.banner-title ,
+.banner-title-heading,
+.banner-title-conten,
+.banner-title-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 854px;
+    height: 100px;
+
+
+}
+.banner-title-heading{
+    width: 854px;
+    height: 100px;
+    flex-direction: row;
+    padding: 14px 30px 14px 20px;
+    border: #F1F1F3 solid 1px;
+    border-radius: 11px;
+    background-color: #FCFCFD;
+    font-size: 25px;
+
+;
+
+}
+.banner-title-heading strong {
+    color: #FF9500;
+}
+.banner-logo{
+    background-image: url("./icon/banner-heading.svg");
+    background-color: #FFF4E5;
+    height: 62px;
+    width: 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14px;
+    border-radius: 6px;
+    margin-right: 10px;
+
+
+}
+
+.banner-title-conten{
+    width: 965px;
+    height: 94px;
+    margin-top: 20px ;
+    margin-bottom: 60px;
+
+}
+.banner-title-conten .title-1{
+    font-size: 38px;
+    font-weight: 500;
+}.banner-title-conten .title-2{
+    font-size: 18px;
+}
+.banner-pattern{
+    background-image: url("./icon/banner-pattern.svg");
+    height: 43px;
+    width: 39px;
+    position: absolute;
+    left: -20px;
+    top: -120px;
+
+}
+ /*button banner*/
+
+.banner-title-button{
+    flex-direction: row;
+    width: 366px;
+    height: 63px;
+
+}
+.banner-title-button .banner-button{
+    padding: 18px 24px 18px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.banner-title-button .button-courses{
+    background-color: #FF9500;
+    color: white;
+    font-weight: bold;
+    margin-right: 12px;
+    border: none;
+    cursor: pointer;
+    width: 195px;
+    height: 63px;
+}
+
+.banner-title-button .button-view{
+    background-color: #FFFFFF;
+    border: #F1F1F3 solid 1px;
+    width: 159px;
+    height: 63px;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
