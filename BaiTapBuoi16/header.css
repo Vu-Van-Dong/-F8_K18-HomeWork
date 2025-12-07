@@ -12,6 +12,10 @@ header {
     padding: 14px 24px 14px 24px;
 
 }
+.header-bottom-control li:hover{
+    background-color: #F1F1F3;
+    border-radius: 10px;
+}
 #header-top span a{
     text-decoration: none;
     color: #ffffff;

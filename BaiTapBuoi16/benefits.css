@@ -1,11 +1,12 @@
 .container, .banner{
     max-width: 1600px;
     margin: auto;
+    /*background-color: #8f6824;*/
 }
 *{
     font-family: Be Vietnam Pro, sans-serif;
 }
-.benefits{
+.benefits-conten{
     display: flex;
     gap: 20px;
     margin-bottom:20px ;
@@ -34,6 +35,7 @@
 
 }
 .up{
+    text-decoration: none;
     color: black;
     border: none;
     width: 67px;
@@ -44,11 +46,14 @@
 
 
 
+
+
 }
 
 .header--action-button{
     font-size: 18px;
 }
+
 .benefits-number{
     font-size: 80px;
     font-weight: bold;
@@ -107,12 +112,15 @@
 }
 /*banner */
 .banner-container{
+    max-width: 1600px;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 /* banner trên */
 .banner{
@@ -133,7 +141,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 854px;
+    max-width: 854px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -171,12 +181,16 @@
 .banner-list--logo{
     background-color: #FCFCFD;
     padding: 30px;
-    width: 1595px;
+    /*width: 1595px;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
-    margin:0 163px 100px 163px ;
+    /*margin:0 163px 100px 163px ;*/
+
+    width: 100%;
+    max-width: 1595px;
+    margin: 0 auto 100px auto;
 
 
 
@@ -272,7 +286,10 @@
     border-radius: 12px;
     z-index: 5;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+
+    /*width: 100%;*/
+    /*max-width: 1596px;*/
 }
 .banner-img button{
     width: 72px;
@@ -295,22 +312,29 @@
 
 
 /*===============nội dung trang cchur ==============================*/
-.conten{
+.conten , .benefits-heading{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1597px;
+    /*width: 1597px;*/
     height: auto;
     margin-top: 100px;
     margin-bottom: 80px;
     position: relative;
     padding: 50px;
 
+    width: 100%;
+    max-width: 1597px;
+
+
+
 
 }
-.conten  .conten-top h2{
+
+.conten  .conten-top h2,
+.benefits-heading .conten-top h2 {
     position: absolute;
     top:0;
     left: 0;
@@ -319,7 +343,8 @@
     font-weight: 600;
 
 }
-.conten-top p{
+.conten .conten-top p,
+.benefits-heading .conten-top p{
     color: #59595A;
     width: 1177px;
     font-size: 18px;
@@ -328,6 +353,9 @@
     position: absolute;
     left: 0;
     margin-top: 10px;
+}
+.conten-top a:hover{
+    background-color: #FF9500;
 }
 
 .conten-top a{
@@ -339,7 +367,8 @@
     border-radius: 8px;
     border: 1px solid #F1F1F3;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
+    /*top: 0;*/
     right: 0;
     color: #292929;
     font-size: 18px;

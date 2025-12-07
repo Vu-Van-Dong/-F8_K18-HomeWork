@@ -1,0 +1,357 @@
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    position: relative;
+    /*gap:80px;*/
+}
+
+/* --- SECTION COURSES --- */
+#Courses {
+    /*background-color: #fafafa; !* giống UI mẫu *!*/
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+/* khối chứa toàn bộ items */
+.Courses ,.Testimonials-conten{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* quan trọng */
+    gap: 30px; /* khoảng cách */
+    width: 100%;
+    margin-top: 80px;
+}
+
+/* mỗi thẻ course */
+.Courses-item ,.Testimonials-item{
+    width: 783px;
+    /*width: calc(50% - 30px); !* để 2 item chia đều 1 hàng *!*/
+    background-color: #FFFFFF;
+    padding: 50px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    gap: 30px;
+    border: 1px solid #F1F1F3;
+    flex-direction: column;
+
+
+}
+
+/* ảnh khóa học */
+.Courses-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+/* nội dung */
+.Courses-conten{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* cho nội dung căn trái giống UI */
+    gap: 30px;
+    position: relative;
+}
+.Courses-item-center{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 683px;
+    height: 43px;
+
+}
+
+.Courses-item-center span:nth-child(1),
+.Courses-item-center span:nth-child(2){
+    padding:10px 16px 10px 16px ;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #F1F1F3;
+}
+.Courses-item-center span:nth-child(3){
+    color:#262626;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top:5px;
+    right: 0;
+}
+.Courses-item-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 14px;
+    position: relative;
+    width: 683px;
+
+}
+.Courses-item-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#F7F7F8;
+    width: 683px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+
+}
+.Courses-conten a:hover{
+    background-color: #9a9898;
+}
+
+
+
+/*==============Our Testimonials========================*/
+
+.Testimonials-item{
+    padding: 0;
+}
+/* Nội dung text */
+.Testimonials-item p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4C4C4D;
+    text-align: left;
+    padding: 50px;
+
+}
+
+/* Tác giả */
+.item-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    width: 100%;
+    background-color: #FCFCFD;
+}
+.item-author-img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+.item-author-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.item-author-img a {
+    position: absolute;  /* Ghim nút ở bên phải */
+    right: 0;
+    padding: 18px 24px;
+    background-color: #F7F7F8;
+    color: #262626;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    cursor: pointer;
+
+}
+
+.item-author-img a:hover {
+    background-color: rgba(92, 87, 87, 0.81);
+}
+/*===================Phaan  đầu của Pricing*/
+.benefits-heading{
+    position: relative;
+}
+/*.benefits-heading .content-top-text{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    width: 1025px;*/
+
+/*}*/
+.benefits-heading .heading-top-btn{
+    display: flex;
+    position: absolute;
+    padding: 12px;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+}
+.heading-top-btn a {
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.heading-top-btn a:first-child{
+    background-color: #FF9500;
+    color:#FFFFFF ;
+}
+.heading-top-btn a:last-child{
+    background-color: #ffffff;
+    color:#4C4C4D;
+}
+
+
+
+
+/*=========pricing-content================*/
+.pricing-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* quan trọng */
+    gap: 30px; /* khoảng cách */
+    max-width: 1600px;
+    width: 100%;
+    padding: 80px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+
+}
+
+
+.pricing-item{
+    width: 703px;
+    /*width: calc(50% - 30px); !* để 2 item chia đều 1 hàng *!*/
+    background-color: #FCFCFD;
+    padding: 50px 30px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 50px;
+    border: 1px solid #F1F1F3;
+    flex-direction: column;
+}
+.pricing-item>span  {
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFF9F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 643px;
+    font-size: 22px;
+    color: #262626;
+    font-weight: 500;
+}
+.pricing-item .pricing-item-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 643px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4C4C4D;
+}
+.pricing-item-heading>span>strong{
+    color: #262626;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.pricing-conten-text >span{
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.pricing-conten-text .conten-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 643px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4C4C4D;
+    gap: 20px;
+    position: relative;
+    padding: 0 30px 0 30px;
+    border: 1px solid #F1F1F3;
+    border-top-left-radius:14px ;
+    border-top-right-radius:14px ;
+}
+.pricing-conten-text >a{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FF9500;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.pricing-conten-text .conten-text .text{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: flex-start;
+    width: 503px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4C4C4D;
+    padding: 14px;
+    background-color: #F1F1F3;
+    border-radius: 8px ;
+    gap:12px;
+    border: 1px solid #F1F1F3;
+    position: relative;
+
+}
+.pricing-conten-text .conten-text .text img{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #FFF4E5;
+    background-position: center;
+    padding:6px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
