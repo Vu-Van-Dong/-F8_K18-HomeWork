@@ -24,7 +24,7 @@ footer{
 }
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
