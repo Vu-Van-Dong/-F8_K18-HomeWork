@@ -10,3 +10,31 @@
 body{
     background: #F7F7F8;
 }
+
+footer{
+    background: rgba(116, 159, 70, 0.59);
+    /*height: 300px;*/
+}
+.footer-bottom{
+    color: #656567;
+    font-size: 18px;
+    text-align: center;
+    width: calc(100% - 162px);
+    margin-bottom: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1600px;
+    background-color: #8b5e00;
+
+}
+.footer-conten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

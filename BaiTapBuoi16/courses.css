@@ -338,10 +338,205 @@
 
 
 
+/*=========================Frequently===============*/
+
+
+.Frequently{
+    display: flex;
+    background-color: white;
+    margin-top: 150px;
+    border-radius: 12px;
+    padding: 100px;
+    position: relative;
+
+}
+
+.Frequently-heading{
+    max-width: 408px;
+    width: 100%;
+    height: 293px;
+
+
+}
+.Frequently-heading h2{
+    color: #262626;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Frequently-heading p{
+    color: #4C4C4D;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+.Frequently-heading a{
+    padding: 18px 24px;
+    color: #262626;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.Frequently-content-item{
+    width: 867px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    /*padding: 50px;*/
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    background-color: white;
+
+
+}
+
+.Frequently-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 867px;
+    gap: 30px;
+     position: relative;
+    /* top:100px;           BỎ */
+    /* right: 100px;        BỎ */
+    margin-left: auto;   /* nếu bạn muốn dồn sang phải */
+}
+
+
+/*.Frequently-item-title*/
+.Frequently-content-item label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* mọi thứ về trái */
+    gap: 100px;
+    padding: 30px 50px;
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+    width: 100%;
+    position: relative;
+}
+
+.Frequently-item-title span{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*.Frequently-item-title span:last-child{*/
+/*    width: 52px;*/
+/*    height: 52px;*/
+/*    padding: 12px;*/
+/*    border-radius: 8px;*/
+/*    background-color: #FFF4E5;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*}*/
+.Frequently-item-title .Frequently-item-title-icon-flex>img{
+    width: 52px;
+    height: 52px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #FFF4E5;
+    cursor: pointer;
+    /*display: none;*/
+    position: absolute;
+    top:17px;
+    right:50px;
+
+}
+.Frequently-item-title .Frequently-item-title-icon-none>img,.Frequently-item-conten-heading-bottom span>img{
+    width: 52px;
+    height: 52px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #FFF4E5;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+
+}
+.Frequently-item-conten p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    color: #4C4C4D;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}
+.Frequently-item-conten-heading-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 767px;
+    height: 96px;
+    text-align: left;
+    color: #4C4C4D;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background-color: #F7F7F8;
+    position: relative;
+
+
+}
+.Frequently-item-conten-heading-bottom .Frequently-item-conten-icon>img{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.Frequently-item-conten{
+    display: none;
+}
 
 
 
+/* Ẩn icon dấu X ban đầu */
+.Frequently-item-title .Frequently-item-title-icon-none > img {
+    display: none;
+}
 
+/* Khi checkbox được checked → đổi icon */
+.Frequently-check:checked ~ label .Frequently-item-title-icon-flex > img {
+    display: none;
+}
+
+.Frequently-check:checked ~ label .Frequently-item-title-icon-none > img {
+    display: block;
+}
+
+/* Ẩn nội dung FAQ ban đầu */
+.Frequently-item-conten {
+    display: none;
+}
+
+/* Khi checkbox checked → hiển nội dung */
+.Frequently-check:checked ~ .Frequently-item-conten {
+    display: block;
+    padding: 30px 50px;
+}
 
 
 
